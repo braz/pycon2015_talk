@@ -1,0 +1,3 @@
+In order to export the data from MongoDB after running the aggregation command to create the temporary collection, you need to use mongoexport. The command assumes the database mongod instance is running on port 27017.
+
+mongoexport -d test -c page_per_day_hits_tmp --type=csv -f=_id.d,_id.m,_id.y,_id.p,daily -o page_per_day_hits_tmp.csv

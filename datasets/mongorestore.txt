@@ -1,0 +1,3 @@
+In order to import the data from MongoDB prior to running the aggregation command on the logs collection which you need to import before creating the temporary collection with the daily page counts per page.
+
+mongorestore -d test data/logs_collection/test/logs.bson
